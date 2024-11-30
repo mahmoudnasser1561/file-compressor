@@ -6,7 +6,7 @@ def make_archive(filepaths, dest_dir):
     with zipfile.ZipFile(dest_path, 'w') as archive:
         for filepath in filepaths:
             filepath = pathlib.Path(filepath)
-            archive.write(filepath, archname=filepath.name)
+            archive.write(filepath, arcname=filepath.name)
 
 if __name__ == "__main__":
     pass
